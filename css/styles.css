@@ -165,7 +165,7 @@ img {
 /* FOOTER */
 
 .footer {
-  color: #ffffff;
+  color: var(--text4-color);
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -252,7 +252,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
+  fill: var(--text4-color);
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -322,7 +322,7 @@ img {
   border-style: hidden;
   border-radius: 4px;
   color: var(--text4-color);
-  background-color: #2196f3;
+  background-color: var(--background5-color);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -339,45 +339,64 @@ img {
 /* INDEX.HTML */
 
 .overlay {
-  width: 100%;
-  background-color: var(--background-color);
+  max-width: 1600px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/imgbackground.jpg");
-  background-size: 1600px 600px;
+  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .overlay__box {
-  color: var(--text4-color);
-  font-weight: 900;
-  font-size: 44px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+}
+
+.overlay__title {
+  color: var(--text4-color);
+  text-transform: uppercase;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  padding: 200px 0;
-  gap: 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .overlay__btn {
-  background-color: var(--background5-color);
   color: var(--text4-color);
+  background-color: var(--background5-color);
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  font-style: normal;
-  cursor: pointer;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
+  border-style: hidden;
   border-radius: 4px;
-  border: none;
-  text-align: center;
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
 /* lorem section */

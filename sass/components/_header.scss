@@ -1,0 +1,10 @@
+.header {
+  border-bottom: 1px solid $color-border-beige;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  background-color: $color-bg-white;
+}

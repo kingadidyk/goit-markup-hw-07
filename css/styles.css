@@ -107,11 +107,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation__link--bluelink {
+.navigation__link--current {
   color: var(--text2-color);
 }
 
-.navigation__link--bluelink::after {
+.navigation__link--current::after {
   content: "";
   position: absolute;
   display: block;
@@ -262,6 +262,7 @@ img {
 .sm-footer__link:hover,
 .sm-footer__link:focus {
   background-color: var(--background5-color);
+  border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -664,13 +665,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section__btn-items .section__btn-items:hover,
-.section__btn-items .section__btn-items:focus {
-  background-color: var(--background5-color);
-  color: var(--text4-color);
-  border: none;
-}
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -687,7 +681,7 @@ img {
   transition-property: color, background-color, box-shadow;
 }
 
-.cards__product--border {
+.cards__product {
   border-left: 1px solid var(--border2-color);
   border-right: 1px solid var(--border2-color);
   border-bottom: 1px solid var(--border2-color);
@@ -745,7 +739,7 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards__overlay > p {
+.cards__overlay-describe {
   color: var(--text4-color);
   font-weight: 400;
   font-size: 18px;

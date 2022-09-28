@@ -32,7 +32,7 @@
     background-color: $color-bg-blue;
     border-radius: 50%;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $main-animation;
   }
 
   &__icon {
@@ -44,8 +44,8 @@
     fill: $color-text-white;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms $main-animation,
+      color 250ms $main-animation;
   }
 }
 
@@ -70,7 +70,7 @@
       background-color: $color-bg-blue;
       fill: $color-text-white;
       transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: $main-animation;
     }
   }
 }

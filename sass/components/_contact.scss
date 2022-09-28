@@ -19,7 +19,7 @@
   &:focus {
     color: $color-text-blue;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $main-animation;
   }
 
   &:hover .contact__icon {
@@ -52,6 +52,6 @@
   &:focus {
     color: $color-text-blue;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: $main-animation;
   }
 }

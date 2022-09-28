@@ -495,6 +495,9 @@ img {
   line-height: 1.71;
 }
 
+.services {
+  padding: 94px 0;
+}
 .services__title {
   color: #212121;
   font-weight: 700;
@@ -505,7 +508,6 @@ img {
   text-align: center;
   margin: 0 0 50px 0;
 }
-
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,11 +518,9 @@ img {
   gap: 30px;
   padding: 0;
 }
-
 .services__item {
   position: relative;
 }
-
 .services__label {
   font-weight: 700;
   font-size: 14px;
@@ -608,7 +608,6 @@ img {
   margin-bottom: 0;
   padding-bottom: 20px;
 }
-
 .sm-footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,7 +615,6 @@ img {
   padding: 0;
   margin: 0;
 }
-
 .sm-footer__item {
   margin-right: 10px;
 }
@@ -632,15 +630,14 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.sm-footer__icon {
+.sm-footer__link__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1019607843);
   fill: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -666,7 +663,6 @@ img {
   margin-bottom: 30px;
   gap: 10px;
 }
-
 .sm-box__link {
   fill: #afb1b8;
   width: 44px;
@@ -881,7 +877,6 @@ img {
 .section__btn-items {
   cursor: pointer;
   color: #212121;
-  list-style: none;
   background-color: #f5f4fa;
   border-radius: 4px;
   border: none;
@@ -897,8 +892,8 @@ img {
 .section__btn-items:hover, .section__btn-items:focus {
   background-color: #2196f3;
   color: #ffffff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1019607843), 0px 1px 2px rgba(0, 0, 0, 0.0784313725), 0px 2px 2px rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1019607843), 0px 1px 2px rgba(0, 0, 0, 0.0784313725), 0px 2px 2px rgba(0, 0, 0, 0.1215686275);
 }
 
 .cards {
@@ -914,22 +909,23 @@ img {
   padding: 0;
 }
 
-.cards____items {
+.cards__items {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
+  padding: 0;
   margin: 0;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
   transition-property: color, background-color, box-shadow, -webkit-box-shadow;
 }
-.cards____items__items:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.cards__items:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1215686275), 0px 4px 4px rgba(0, 0, 0, 0.0588235294), 1px 4px 6px rgba(0, 0, 0, 0.1607843137);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1215686275), 0px 4px 4px rgba(0, 0, 0, 0.0588235294), 1px 4px 6px rgba(0, 0, 0, 0.1607843137);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -950,6 +946,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   padding: 20px 24px 4px 24px;
+  margin: 0;
 }
 .cards__product-describe {
   color: #757575;
@@ -959,6 +956,7 @@ img {
   font-weight: 400;
   letter-spacing: 0.03em;
   padding: 0px 24px 20px 24px;
+  margin: 0;
 }
 
 .cards__image {
@@ -988,6 +986,7 @@ img {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .cards__overlay-describe {
   color: #ffffff;
   font-weight: 400;

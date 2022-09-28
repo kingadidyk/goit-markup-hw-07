@@ -21,6 +21,11 @@
 
 .sm-footer__link {
   display: block;
+  width: 44px;
+  height: 44px;
+  fill: $color-text-white;
+  border-radius: 50%;
+  background-color: #ffffff1a;
 
   &:hover,
   &:focus {

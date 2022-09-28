@@ -10,45 +10,44 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
   transition: opacity 250ms ease, visibility 550ms ease;
   transition-duration: 1800ms;
-}
 
-.backdrop__modal {
-  position: absolute;
-  width: 528px;
-  height: 581px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: $color-bg-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
+  &__modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-bg-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
 
-.backdrop__button-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 30px;
-  height: 30px;
-  padding: 9px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: $color-bg-white;
-  cursor: pointer;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+    border: 1px solid #0000001a;
+    border-radius: 50%;
+    background-color: $color-bg-white;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    color: $color-text-blue;
-    border-color: $color-text-blue;
+    &:hover {
+      color: $color-text-blue;
+      border-color: $color-text-blue;
+    }
   }
 }
 
@@ -72,6 +71,44 @@
   row-gap: 10px;
   margin-top: 12px;
   width: 100%;
+
+  &__form-link {
+    color: $color-text-blue;
+    font-weight: 400;
+    transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__declaration {
+    margin-top: 10px;
+  }
+
+  &__comment {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    width: 448px;
+    height: 120px;
+    margin-bottom: 20px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__btn {
+    width: 200px;
+    height: 50px;
+    background: $color-bg-blue;
+    border-radius: 4px;
+    border: none;
+    color: $color-text-white;
+    font-weight: $font-weight-bold;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px #00000026;
+    padding: 10px 0;
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal__label {
@@ -110,26 +147,11 @@
   fill: $color-text-black;
 }
 
-.modal__comment {
-  position: relative;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  width: 448px;
-  height: 120px;
-  margin-bottom: 20px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .modal__text {
   width: 448px;
   height: 120px;
   text-align: left;
   padding: 12px 16px;
-}
-
-.modal__declaration {
-  margin-top: 10px;
 }
 
 .modal__checkbox {
@@ -156,28 +178,4 @@
   fill: $color-text-white;
   background-color: $color-bg-white;
   cursor: pointer;
-}
-
-.modal__form-link {
-  color: $color-text-blue;
-  font-weight: 400;
-  transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__btn {
-  width: 200px;
-  height: 50px;
-  background: $color-bg-blue;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  color: $color-text-white;
-  font-weight: $font-weight-bold;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  margin-top: 30px;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  padding: 10px 0;
-  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }

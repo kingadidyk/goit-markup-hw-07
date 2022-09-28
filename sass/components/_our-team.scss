@@ -1,57 +1,57 @@
-.team__section {
+.team {
   background-color: $color-bg-almostWhite;
   width: 100%;
-}
 
-.team__title {
-  color: $color-text-black;
-  font-weight: $font-weight-bold;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  list-style: none;
-  text-align: center;
-  margin: 0 0 50px 0;
-}
+  &__title {
+    color: $color-text-black;
+    font-weight: $font-weight-bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    list-style: none;
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
 
-.team__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  text-align: center;
-  padding: 0;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    padding: 0;
+  }
 
-.team__items {
-  display: flex;
-  justify-content: center;
-  width: 270px;
-  height: 428px;
-  left: 1115px;
-  top: 1635px;
-  background-color: $color-bg-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+  &__items {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 428px;
+    left: 1115px;
+    top: 1635px;
+    background-color: $color-bg-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-.team__member {
-  color: $color-text-black;
-  background-color: $color-bg-white;
-  font-weight: $font-weight-medium;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin: 30px 0 10px 0;
-}
+  &__member {
+    color: $color-text-black;
+    background-color: $color-bg-white;
+    font-weight: $font-weight-medium;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin: 30px 0 10px 0;
+  }
 
-.team__member-describe {
-  color: $color-text-gray;
-  background-color: $color-bg-white;
-  font-size: 16px;
-  line-height: 1.18;
-  font-weight: 400px;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 16px;
+  &__member-describe {
+    color: $color-text-gray;
+    background-color: $color-bg-white;
+    font-size: 16px;
+    line-height: 1.18;
+    font-weight: 400px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 16px;
+  }
 }

@@ -7,16 +7,16 @@
   color: $color-text-white;
   margin-bottom: 0;
   padding-bottom: 20px;
-}
 
-.sm-footer__list {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
+  &__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
 
-.sm-footer__item {
-  margin-right: 10px;
+  &__item {
+    margin-right: 10px;
+  }
 }
 
 .sm-footer__link {
@@ -29,19 +29,19 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
 
-.sm-footer__icon {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: $color-text-white;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    fill: $color-text-white;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .sm-box {
@@ -51,21 +51,21 @@
   fill: $color-border-dirtyPigeon;
   margin-bottom: 30px;
   gap: 10px;
-}
 
-.sm-box__link {
-  fill: $color-border-dirtyPigeon;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: $color-bg-white;
-  transition-property: color, background-color, box-shadow;
+  &__link {
+    fill: $color-border-dirtyPigeon;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $color-bg-white;
+    transition-property: color, background-color, box-shadow;
 
-  &:hover,
-  &:focus {
-    background-color: $color-bg-blue;
-    fill: $color-text-white;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $color-bg-blue;
+      fill: $color-text-white;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }

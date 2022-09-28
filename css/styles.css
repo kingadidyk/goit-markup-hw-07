@@ -483,7 +483,7 @@ img {
 
 /* our team section */
 
-.team__section {
+.team {
   background-color: var(--background2-color);
   width: 100%;
 }

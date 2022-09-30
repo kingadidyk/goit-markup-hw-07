@@ -161,8 +161,12 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1490196078);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1490196078);
   padding: 10px 0;
+  cursor: pointer;
   -webkit-transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__btn:hover {
+  opacity: 0.8;
 }
 
 .modal__label {
@@ -689,6 +693,9 @@ img {
 }
 
 .client {
+  margin-bottom: 50px;
+}
+.client__title {
   text-align: center;
   color: #212121;
   font-weight: 700;
@@ -696,7 +703,6 @@ img {
   font-style: normal;
   line-height: 42px;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 .client__list {
   display: -webkit-box;

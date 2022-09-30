@@ -29,6 +29,10 @@
     transition: background-color 250ms $main-animation;
     white-space: nowrap;
     padding: 10px 28px 10px 42px;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 
   &__settings {

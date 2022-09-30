@@ -829,6 +829,9 @@ img {
   white-space: nowrap;
   padding: 10px 28px 10px 42px;
 }
+.form-footer__btn:hover {
+  opacity: 0.9;
+}
 .form-footer__settings {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
